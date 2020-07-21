@@ -9,28 +9,23 @@ app.set('views', __dirname + '/views');
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.get('/home', (request, response) => {
-  console.log('Request received'); // this is a route handler - the handle endpoints but are called "route handler"
-  response.sendFile(__dirname + '/views/home.html');
+  response.render('home');
 });
 
 app.get('/about', (request, response) => {
-  console.log('Request received'); // this is a route handler - the handle endpoints but are called "route handler"
-  response.sendFile(__dirname + '/views/about.html');
+  response.render('about');
 });
 
 app.get('/work', (request, response) => {
-  console.log('Request received'); // this is a route handler - the handle endpoints but are called "route handler"
-  response.sendFile(__dirname + '/views/work.html');
+  response.render('work');
 });
 
 app.get('/gallery', (request, response) => {
-  console.log('Request received'); // this is a route handler - the handle endpoints but are called "route handler"
-  response.sendFile(__dirname + '/views/gallery.html');
+  response.render('gallery');
 });
 
 app.get('/*', (request, response) => {
-  console.log('Request received'); // this is a route handler - the handle endpoints but are called "route handler"
-  response.sendFile(__dirname + '/views/home.html');
+  response.render('home');
 });
 
 app.listen(3000);
