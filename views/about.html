@@ -12,6 +12,18 @@
     <title>Document</title>
   </head>
   <body
+    style="
+      background-color: #333333;
+      color: aliceblue;
+      background-image: linear-gradient(
+          45deg,
+          rgba(59, 59, 58, 0.62),
+          rgba(0, 0, 0, 0.58)
+        ),
+        url(/bgimg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
     class="text-center"
     style="background-color: #333333; color: aliceblue;"
   >
@@ -20,15 +32,23 @@
         <div class="inner">
           <nav class="nav nav-masthead justify-content-center">
             <h3 class="masthead-brand mr-5">Dwight Schrute</h3>
-            <a class="nav-link active" href="/home">Home</a>
-            <a class="nav-link active" href="/about">About</a>
-            <a class="nav-link active" href="/work">Work</a>
-            <a class="nav-link active" href="/gallery">Gallery</a>
+            <a style="color: white;" class="nav-link active" href="/home"
+              >Home</a
+            >
+            <a style="color: white;" class="nav-link active" href="/about"
+              >About</a
+            >
+            <a style="color: white;" class="nav-link active" href="/work"
+              >Work</a
+            >
+            <a style="color: white;" class="nav-link active" href="/gallery"
+              >Gallery</a
+            >
           </nav>
         </div>
       </header>
 
-      <div class="jumbotron" style="background-color: #333333;">
+      <div class="jumbotron" style="background-color: rgba(59, 59, 58, 0.5);">
         <img src="/colorimg.jfif" alt="here" />
         <h1 class="display-4 my-3">About this legend</h1>
         <p class="lead">

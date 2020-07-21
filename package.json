@@ -19,6 +19,7 @@
   "homepage": "https://github.com/HaithamDesouky/lab-express-basic-site#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "expresss": "0.0.0"
+    "expresss": "0.0.0",
+    "hbs": "^4.1.1"
   }
 }
